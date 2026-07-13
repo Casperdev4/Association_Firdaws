@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://fondation-allam.fr/don-gratuit.html"/>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fondation-allam.fr/don-gratuit.html">
+    <meta property="og:title" content="Entraide - Articles Gratuits | Fondation Allam">
+    <meta property="og:description" content="Entraide solidaire de la Fondation Allam. Recevez gratuitement des articles pour votre famille en Essonne.">
+    <meta property="og:image" content="https://fondation-allam.fr/colis_alimentaire_91.webp">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="96x96" href="favicon-96x96.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+    <title>Entraide - Articles Gratuits | Fondation Allam</title>
+<meta name='robots' content='max-image-preview:large' />
+<meta name="description" content="Entraide solidaire de la Fondation Allam. Recevez gratuitement des articles pour votre famille en Essonne.">
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link href='https://fonts.gstatic.com' crossorigin='anonymous' rel='preconnect' />
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NGO","name":"Fondation Allam","url":"https://fondation-allam.fr/","logo":"https://fondation-allam.fr/fondation-allam.png","description":"Association caritative dédiée à la distribution de colis alimentaires aux familles dans le besoin en Essonne.","email":"contact@fondation-allam.fr","address":{"@type":"PostalAddress","addressRegion":"Île-de-France","postalCode":"91, 77","addressCountry":"FR"},"sameAs":[]}</script>
+<link rel='stylesheet' id='fondation-allam-fonts-css' href='https://fonts.googleapis.com/css2?family=Allura&family=Onest:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,500&display=swap' media='all' />
+<link rel='stylesheet' id='fondation-allam-style-css' href='style.css' media='all' />
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <a href="index.html" class="logo" title="Fondation Allam - ONG humanitaire fiable">
+            <img loading="lazy" src="logo.png" alt="Fondation Allam - Association humanitaire musulmane" title="Fondation Allam" class="logo-img">
+        </a>
+        <nav class="nav" id="nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link" title="Accueil - Association musulmane humanitaire">Accueil</a></li>
+                <li><a href="ong-musulmane-fiable.html" class="nav-link" title="À propos de notre ONG musulmane fiable">À propos</a></li>
+                <li><a href="distribution-colis-alimentaire.html" class="nav-link" title="Galerie distributions colis alimentaires">Galerie</a></li>
+                <li><a href="don-gratuit.html" class="nav-link active" title="Entraide solidaire">Entraide</a></li>
+                <li><a href="contact-don-alimentaire.html" class="nav-link" title="Contact association humanitaire musulmane">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="index.html#don" class="btn btn-primary header-cta" title="Faire un don alimentaire - Don nourriture">Faites un don maintenant</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<style>
+/* ===== Page Entraide Styles (extrait du HTML original) ===== */
+.page-hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    padding: 140px 0 80px;
+    text-align: center;
+    color: var(--white);
+}
+
+.page-hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.page-hero p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Items Grid */
+.items-section { padding: 80px 0; }
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.item-card {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    position: relative;
+}
+
+.item-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-hover); }
+.item-card.reserved { opacity: 0.7; }
+.item-card.reserved::after {
+    content: 'RÉSERVÉ';
+    position: absolute;
+    top: 20px;
+    right: -35px;
+    background: #e74c3c;
+    color: white;
+    padding: 8px 40px;
+    font-weight: 700;
+    font-size: 12px;
+    transform: rotate(45deg);
+    z-index: 10;
+}
+
+.item-image { width: 100%; height: 200px; object-fit: cover; background: var(--gray-light); }
+.item-content { padding: 25px; }
+.item-category {
+    display: inline-block;
+    background: var(--gray-light);
+    color: var(--text-light);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.item-title { font-size: 1.3rem; font-weight: 700; color: var(--secondary-color); margin-bottom: 10px; }
+.item-description { color: var(--text-light); font-size: 14px; margin-bottom: 15px; line-height: 1.5; }
+.item-meta { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; font-size: 13px; color: var(--text-light); }
+.item-meta svg { width: 16px; height: 16px; flex-shrink: 0; }
+.item-meta span { display: flex; align-items: center; gap: 5px; }
+
+.btn-reserve {
+    width: 100%;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.btn-reserve:hover { background: var(--primary-dark); }
+.btn-reserve:disabled { background: #ccc; cursor: not-allowed; }
+
+/* How it works */
+.how-section { padding: 80px 0; background: var(--gray-light); }
+.steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; margin-top: 40px; }
+.step-card { background: var(--white); padding: 30px; border-radius: 15px; text-align: center; box-shadow: var(--shadow); }
+.step-number {
+    width: 50px; height: 50px;
+    background: var(--primary-color); color: white;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.5rem; font-weight: 700;
+    margin: 0 auto 20px;
+}
+.step-card h3 { font-size: 1.1rem; margin-bottom: 10px; color: var(--secondary-color); }
+.step-card p { font-size: 14px; color: var(--text-light); }
+
+/* Modal */
+.modal-overlay {
+    display: none;
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2000;
+    align-items: center; justify-content: center;
+    padding: 20px;
+}
+.modal-overlay.active { display: flex; }
+.modal {
+    background: white;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+}
+.modal-header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: white;
+    padding: 25px 30px;
+    border-radius: 20px 20px 0 0;
+}
+.modal-header h2 { font-size: 1.5rem; margin-bottom: 5px; }
+.modal-header p { opacity: 0.9; font-size: 14px; }
+.modal-close {
+    position: absolute; top: 20px; right: 20px;
+    background: rgba(255,255,255,0.2);
+    border: none; color: white;
+    width: 35px; height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex; align-items: center; justify-content: center;
+    transition: var(--transition);
+}
+.modal-close:hover { background: rgba(255,255,255,0.3); }
+.modal-body { padding: 30px; }
+.modal-item-preview {
+    display: flex; gap: 15px;
+    padding: 15px;
+    background: var(--gray-light);
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+.modal-item-preview img { width: 80px; height: 80px; object-fit: cover; border-radius: 8px; }
+.modal-item-info h4 { font-size: 1rem; margin-bottom: 5px; }
+.modal-item-info p { font-size: 13px; color: var(--text-light); }
+
+.reservation-form .form-group { margin-bottom: 20px; }
+.reservation-form label { display: block; font-weight: 600; margin-bottom: 8px; color: var(--secondary-color); }
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid var(--gray-border);
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: inherit;
+    transition: var(--transition);
+}
+.reservation-form input:focus,
+.reservation-form select:focus,
+.reservation-form textarea:focus { outline: none; border-color: var(--primary-color); }
+.reservation-form .required { color: var(--primary-color); }
+
+.form-note {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 15px;
+    border-radius: 0 10px 10px 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.form-note strong { color: #856404; }
+
+/* Info Section */
+.info-section { padding: 80px 0; }
+.info-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 40px; }
+.info-card { text-align: center; padding: 30px; }
+.info-icon {
+    width: 70px; height: 70px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 20px;
+}
+.info-icon svg { width: 35px; height: 35px; color: white; }
+.info-card h3 { font-size: 1.2rem; margin-bottom: 10px; color: var(--secondary-color); }
+.info-card p { color: var(--text-light); font-size: 14px; }
+
+/* Empty / Loading / Error */
+.empty-state { text-align: center; padding: 60px 20px; background: var(--gray-light); border-radius: 15px; margin-top: 40px; }
+.empty-state svg { width: 80px; height: 80px; color: var(--text-light); margin-bottom: 20px; }
+.empty-state h3 { font-size: 1.5rem; margin-bottom: 10px; }
+.empty-state p { color: var(--text-light); }
+.loading-state { text-align: center; padding: 60px 20px; }
+.loader {
+    width: 50px; height: 50px;
+    border: 4px solid var(--gray-border);
+    border-top-color: var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.loading-state p { color: var(--text-light); }
+.error-state { text-align: center; padding: 60px 20px; background: #fff5f5; border-radius: 15px; margin-top: 40px; }
+.error-state svg { width: 80px; height: 80px; color: #e74c3c; margin-bottom: 20px; }
+.error-state h3 { font-size: 1.5rem; margin-bottom: 10px; color: #c0392b; }
+.error-state p { color: var(--text-light); margin-bottom: 20px; }
+
+/* Donate Section */
+.donate-section { padding: 80px 0; background: var(--gray-light); }
+.donate-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start; }
+.donate-description { font-size: 1.1rem; color: var(--text-light); margin-bottom: 30px; line-height: 1.7; }
+.donate-benefits { display: flex; flex-direction: column; gap: 20px; }
+.benefit-item { display: flex; gap: 15px; align-items: flex-start; }
+.benefit-icon {
+    width: 40px; height: 40px; min-width: 40px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+}
+.benefit-icon svg { width: 20px; height: 20px; color: white; }
+.benefit-item h4 { font-size: 1rem; margin-bottom: 5px; color: var(--secondary-color); }
+.benefit-item p { font-size: 14px; color: var(--text-light); margin: 0; }
+
+.donate-form-wrapper { background: white; border-radius: 20px; padding: 35px; box-shadow: var(--shadow); }
+.donate-form h3 { font-size: 1.5rem; margin-bottom: 25px; color: var(--secondary-color); text-align: center; }
+.donate-form .form-group { margin-bottom: 18px; }
+.donate-form label { display: block; font-weight: 600; margin-bottom: 8px; color: var(--secondary-color); font-size: 14px; }
+.donate-form input,
+.donate-form select,
+.donate-form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 2px solid var(--gray-border);
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: var(--transition);
+}
+.donate-form input:focus,
+.donate-form select:focus,
+.donate-form textarea:focus { outline: none; border-color: var(--primary-color); }
+.donate-form .required { color: var(--primary-color); }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+
+.form-photo-note {
+    display: flex; align-items: center; gap: 10px;
+    background: #e8f4fd;
+    border-radius: 10px;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #1a73e8;
+}
+.form-photo-note svg { flex-shrink: 0; color: #1a73e8; }
+
+@media (max-width: 1024px) {
+    .items-grid { grid-template-columns: repeat(2, 1fr); }
+    .steps-grid { grid-template-columns: repeat(2, 1fr); }
+    .info-grid { grid-template-columns: repeat(2, 1fr); }
+    .donate-grid { grid-template-columns: 1fr; gap: 40px; }
+}
+
+@media (max-width: 768px) {
+    .page-hero h1 { font-size: 2rem; }
+    .items-grid { grid-template-columns: 1fr; }
+    .steps-grid { grid-template-columns: 1fr; }
+    .info-grid { grid-template-columns: 1fr; }
+    .donate-form-wrapper { padding: 25px; }
+    .form-row { grid-template-columns: 1fr; gap: 0; }
+}
+</style>
+
+<section class="page-hero">
+    <div class="container">
+        <h1>Entraide Solidaire</h1>
+        <p>Recevez gratuitement des articles grâce à la générosité de nos donateurs.</p>
+    </div>
+</section>
+
+<section class="how-section">
+    <div class="container">
+        <h2 class="section-title">Comment ça marche ?</h2>
+        <p class="section-subtitle">Un processus simple en 4 étapes</p>
+        <div class="steps-grid">
+            <div class="step-card"><div class="step-number">1</div><h3>Parcourez</h3><p>Consultez les articles disponibles ci-dessous</p></div>
+            <div class="step-card"><div class="step-number">2</div><h3>Réservez</h3><p>Remplissez le formulaire de réservation</p></div>
+            <div class="step-card"><div class="step-number">3</div><h3>Validation</h3><p>Nous vous rappelons pour confirmer</p></div>
+            <div class="step-card"><div class="step-number">4</div><h3>Récupération</h3><p>Venez chercher l'article au point de retrait</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="items-section" id="articles">
+    <div class="container">
+        <h2 class="section-title">Articles Disponibles</h2>
+        <p class="section-subtitle">Réservez gratuitement ce dont vous avez besoin</p>
+
+        <div class="items-grid" id="itemsGrid"></div>
+
+        <div class="loading-state" id="loadingState">
+            <div class="loader"></div>
+            <p>Chargement des articles...</p>
+        </div>
+
+        <div class="empty-state" id="emptyState" style="display:none;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+            </svg>
+            <h3>Aucun article disponible</h3>
+            <p>Revenez bientôt, de nouveaux articles sont ajoutés régulièrement.</p>
+        </div>
+
+        <div class="error-state" id="errorState" style="display:none;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+            </svg>
+            <h3>Erreur de chargement</h3>
+            <p>Impossible de charger les articles. Veuillez rafraîchir la page.</p>
+            <button class="btn btn-primary" onclick="loadArticles()">Réessayer</button>
+        </div>
+    </div>
+</section>
+
+<section class="info-section">
+    <div class="container">
+        <h2 class="section-title">Informations Importantes</h2>
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="info-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                </div>
+                <h3>Essonne uniquement</h3>
+                <p>Ce service est réservé aux habitants de l'Essonne (91) et de la Seine-et-Marne (77) dans le besoin.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                    </svg>
+                </div>
+                <h3>Validation par téléphone</h3>
+                <p>Nous vous rappelons pour confirmer votre réservation et organiser le retrait.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </div>
+                <h3>Premier arrivé, premier servi</h3>
+                <p>Les articles sont attribués par ordre d'arrivée des demandes validées.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="donate-section" id="proposer">
+    <div class="container">
+        <div class="donate-grid">
+            <div class="donate-info">
+                <h2 class="section-title" style="text-align:left;">Vous avez des objets à donner ?</h2>
+                <p class="donate-description">Vos dons permettent d'aider des familles dans le besoin. Proposez vos articles via ce formulaire et nous vous recontacterons.</p>
+
+                <div class="donate-benefits">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        </div>
+                        <div><h4>Articles acceptés</h4><p>Électroménager, mobilier, vêtements, jouets, livres, matériel bébé...</p></div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        </div>
+                        <div><h4>En bon état</h4><p>Les articles doivent être propres et fonctionnels.</p></div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        </div>
+                        <div><h4>Récupération possible</h4><p>Nous pouvons venir chercher les articles encombrants.</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="donate-form-wrapper">
+                <form class="donate-form" id="donateForm" onsubmit="return submitDonation(event)">
+                    <h3>Proposer un article</h3>
+
+                    <div class="hp-wrap" style="position:absolute;left:-9999px;">
+                        <label for="website4">Site web :</label>
+                        <input type="text" id="website4" name="_honey" autocomplete="off">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group"><label>Nom complet <span class="required">*</span></label><input type="text" name="nom_donateur" placeholder="Votre nom" required></div>
+                        <div class="form-group"><label>Téléphone <span class="required">*</span></label><input type="tel" name="tel_donateur" placeholder="06 XX XX XX XX" required></div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group"><label>Email</label><input type="email" name="email_donateur" placeholder="votre@email.com"></div>
+                        <div class="form-group"><label>Ville (91) <span class="required">*</span></label><input type="text" name="ville_donateur" placeholder="Votre ville" required></div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Catégorie <span class="required">*</span></label>
+                            <select name="categorie_article" required>
+                                <option value="">Sélectionnez...</option>
+                                <option value="Électroménager">Électroménager</option>
+                                <option value="Mobilier">Mobilier</option>
+                                <option value="Vêtements">Vêtements</option>
+                                <option value="Jouets">Jouets</option>
+                                <option value="Livres">Livres</option>
+                                <option value="Matériel bébé">Matériel bébé</option>
+                                <option value="Informatique">Informatique</option>
+                                <option value="Vaisselle">Vaisselle</option>
+                                <option value="Décoration">Décoration</option>
+                                <option value="Autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group"><label>Nom de l'article <span class="required">*</span></label><input type="text" name="nom_article" placeholder="Ex: Machine à laver" required></div>
+                    </div>
+
+                    <div class="form-group"><label>Description de l'article <span class="required">*</span></label><textarea name="description_article" rows="3" placeholder="État, dimensions, marque, défauts éventuels..." required></textarea></div>
+
+                    <div class="form-group"><label>Disponibilité pour le retrait</label><input type="text" name="disponibilite" placeholder="Ex: Samedi matin, tous les soirs après 18h..."></div>
+
+                    <button type="submit" class="btn btn-primary btn-large" style="width:100%;">Proposer mon don</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal-overlay" id="reservationModal">
+    <div class="modal">
+        <div class="modal-header">
+            <h2>Réserver cet article</h2>
+            <p>Remplissez le formulaire ci-dessous</p>
+            <button class="modal-close" onclick="closeReservation()">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-item-preview" id="modalItemPreview">
+                <img loading="lazy" src="" alt="Article" id="modalItemImage">
+                <div class="modal-item-info">
+                    <h4 id="modalItemTitle"></h4>
+                    <p id="modalItemCategory"></p>
+                </div>
+            </div>
+
+            <div class="form-note">
+                <strong>Important :</strong> Ce service est réservé aux personnes dans le besoin résidant en Essonne (91) ou en Seine-et-Marne (77). Nous vous contacterons pour valider votre demande.
+            </div>
+
+            <form class="reservation-form" id="reservationForm" onsubmit="return submitReservation(event)">
+                <input type="hidden" name="type_formulaire" value="RESERVATION_ARTICLE">
+                <input type="hidden" name="article" id="hiddenArticle">
+                <div class="hp-wrap" style="position:absolute;left:-9999px;">
+                    <label for="website3">Site web :</label>
+                    <input type="text" id="website3" name="_honey" autocomplete="off">
+                </div>
+
+                <div class="form-group"><label>Nom complet <span class="required">*</span></label><input type="text" name="nom" placeholder="Votre nom et prénom" required></div>
+                <div class="form-group"><label>Téléphone <span class="required">*</span></label><input type="tel" name="tel" placeholder="06 XX XX XX XX" pattern="^((\+33|0)[1679])[0-9]{8}$" required></div>
+                <div class="form-group"><label>Email</label><input type="email" name="email" placeholder="votre@email.com"></div>
+                <div class="form-group"><label>Ville (91) <span class="required">*</span></label><input type="text" name="ville" placeholder="Votre ville dans le 91" required></div>
+
+                <div class="form-group">
+                    <label>Situation familiale <span class="required">*</span></label>
+                    <select name="situation" required>
+                        <option value="">Sélectionnez...</option>
+                        <option value="famille_enfants">Famille avec enfants</option>
+                        <option value="personne_seule">Personne seule</option>
+                        <option value="couple">Couple sans enfants</option>
+                        <option value="senior">Senior / Retraité</option>
+                        <option value="etudiant">Étudiant</option>
+                        <option value="autre">Autre situation</option>
+                    </select>
+                </div>
+
+                <div class="form-group"><label>Pourquoi avez-vous besoin de cet article ?</label><textarea name="message" rows="3" placeholder="Décrivez brièvement votre situation (facultatif)"></textarea></div>
+
+                <button type="submit" class="btn btn-primary" style="width:100%;">Envoyer ma demande</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <h4 class="footer-about-title">Fondation Allam</h4>
+                <p>Association caritative dédiée à la distribution de colis alimentaires aux familles dans le besoin, en Essonne (91) et en Seine-et-Marne (77).</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/fondation.allam?igsh=MTRocjRneWFseTM1cg%3D%3D&utm_source=qr" class="footer-social-link" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="mailto:contact@fondation-allam.fr" class="footer-social-link" aria-label="Nous écrire">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                </div>
+                <p class="footer-legal">Association loi 1901&nbsp;&middot;&nbsp;RNA&nbsp;W913016559&nbsp;&middot;&nbsp;SIRET&nbsp;105&nbsp;671&nbsp;465&nbsp;00018</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html" title="Accueil association musulmane">Accueil</a></li>
+                    <li><a href="ong-musulmane-fiable.html" title="À propos association humanitaire musulmane">À propos</a></li>
+                    <li><a href="distribution-colis-alimentaire.html" title="Galerie colis alimentaire distribution">Galerie</a></li>
+                    <li><a href="don-gratuit.html" title="Entraide solidaire">Entraide</a></li>
+                    <li><a href="contact-don-alimentaire.html" title="Contact don alimentaire">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Liens utiles</h4>
+                <ul>
+                    <li><a href="index.html#don">Faire un don</a></li>
+                    <li><a href="https://www.helloasso.com/associations/fondation-allam" target="_blank" rel="noopener" title="Soutenir la Fondation Allam sur HelloAsso">Faire un don sur HelloAsso</a></li>
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                    <li><a href="politique-de-paiement.html">Politique de paiement</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <ul class="footer-contact-list">
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <span><a href="mailto:contact@fondation-allam.fr">contact@fondation-allam.fr</a></span>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                        <span><a href="mailto:dons@fondation-allam.fr">dons@fondation-allam.fr</a></span>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>14 place des Terrasses de l'Agora,<br>91000 Évry-Courcouronnes</span>
+                    </li>
+                </ul>
+                <a href="index.html#don" class="footer-don-btn">Faire un don</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Fondation Allam. Tous droits réservés.</p>
+            <p>Site réalisé par <a href="https://webprime.fr" target="_blank" rel="noopener">WebPrime</a></p>
+        </div>
+    </div>
+</footer>
+
+<a href="https://www.instagram.com/fondation.allam?igsh=MTRocjRneWFseTM1cg%3D%3D&utm_source=qr" class="instagram-float" target="_blank" rel="noopener" aria-label="Suivez la Fondation Allam sur Instagram">
+    <img src="instagram.png" alt="Instagram Fondation Allam" loading="lazy" width="56" height="56">
+</a>
+
+<script>
+window.FondationAllamConfig = {
+    donRedirectMode: "helloasso",
+    helloassoMonthly: "https://www.helloasso.com/associations/fondation-allam/adhesions/dons-mensuel",
+    helloassoOnce: "https://www.helloasso.com/associations/fondation-allam/adhesions/dons-ponctuels",
+    googleSheetId: "1TOq8ni8kG1_5IfdfG-MNHLuCBNeUZkmdhC4Kqsn0LTo",
+    googleSheetName: "Feuille 1",
+    formEndpoint: "https://formsubmit.co/ajax/fondation.allam@gmail.com",
+    contactPageUrl: "contact-don-alimentaire.html"
+};
+</script>
+<script src="script.js"></script>
+</body>
+</html>

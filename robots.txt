@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fondation-allam.fr/sitemap.xml

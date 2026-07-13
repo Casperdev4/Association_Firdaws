@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+    <url>
+        <loc>https://fondation-allam.fr</loc>
+        <lastmod>2026-07-13</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://fondation-allam.fr/colis_alimentaire_91.webp</image:loc>
+            <image:caption>Distribution de colis alimentaires gratuits par l'association musulmane Fondation Allam en Essonne.</image:caption>
+            <image:title>Colis alimentaire gratuit - Association musulmane humanitaire Essonne</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://fondation-allam.fr/fondation-allam.png</image:loc>
+            <image:caption>Logo officiel de la Fondation Allam, ONG musulmane fiable en Essonne.</image:caption>
+            <image:title>Association musulmane Fondation Allam - ONG humanitaire fiable</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fondation-allam.fr/ong-musulmane-fiable.html</loc>
+        <lastmod>2026-07-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://fondation-allam.fr/preparation-colis-alimentaire.webp</image:loc>
+            <image:caption>Preparation de colis alimentaires par les benevoles de l'association musulmane humanitaire Fondation Allam.</image:caption>
+            <image:title>Preparation colis alimentaire gratuit - Association musulmane</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://fondation-allam.fr/distribution-colis-alimentaires.jpg</image:loc>
+            <image:caption>Distribution de colis alimentaires aux familles dans le besoin par notre ONG musulmane fiable.</image:caption>
+            <image:title>Distribution colis alimentaires - ONG musulmane fiable</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://fondation-allam.fr/aide-alimentaire.jpeg</image:loc>
+            <image:caption>Aide alimentaire d'urgence proposee par l'association islamique Fondation Allam.</image:caption>
+            <image:title>Aide alimentaire urgence - Association islamique humanitaire</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://fondation-allam.fr/colis_alimentaire_91.webp</image:loc>
+            <image:caption>Colis alimentaire complet distribue par l'association humanitaire musulmane en Essonne.</image:caption>
+            <image:title>Colis alimentaire Essonne - Association humanitaire musulmane</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fondation-allam.fr/distribution-colis-alimentaire.html</loc>
+        <lastmod>2026-07-13</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://fondation-allam.fr/preparation-colis-alimentaire.webp</image:loc>
+            <image:caption>Preparation des colis alimentaires en ligne par notre association musulmane fiable.</image:caption>
+            <image:title>Colis alimentaire en ligne - Don nourriture</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://fondation-allam.fr/distribution-colis-alimentaires.jpg</image:loc>
+            <image:caption>Dons alimentaires aux associations - Distribution aux familles demunies.</image:caption>
+            <image:title>Dons alimentaires aux associations humanitaires</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://fondation-allam.fr/aide-alimentaire.jpeg</image:loc>
+            <image:caption>Don alimentaire par notre association musulmane - Aide alimentaire urgence.</image:caption>
+            <image:title>Don alimentaire association musulmane</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://fondation-allam.fr/colis_alimentaire_91.webp</image:loc>
+            <image:caption>Banque alimentaire don - Colis alimentaire Fondation Allam en Essonne.</image:caption>
+            <image:title>Banque alimentaire don Fondation Allam</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fondation-allam.fr/contact-don-alimentaire.html</loc>
+        <lastmod>2026-07-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://fondation-allam.fr/fondation-allam.png</image:loc>
+            <image:caption>Contactez l'association musulmane Fondation Allam pour faire un don alimentaire ou devenir benevole.</image:caption>
+            <image:title>Contact don alimentaire - Association musulmane Fondation Allam</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fondation-allam.fr/don-gratuit.html</loc>
+        <lastmod>2026-07-13</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://fondation-allam.fr/fondation-allam.png</image:loc>
+            <image:caption>Entraide solidaire - Recevez gratuitement des articles pour votre famille en Essonne.</image:caption>
+            <image:title>Entraide Articles Gratuits - Fondation Allam</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fondation-allam.fr/mentions-legales.html</loc>
+        <lastmod>2026-07-13</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+    <url>
+        <loc>https://fondation-allam.fr/politique-de-paiement.html</loc>
+        <lastmod>2026-07-13</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+</urlset>
